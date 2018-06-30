@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-14" transform="translate(-354.000000, -419.000000)">
+            <g id="Group-3" transform="translate(354.000000, 419.000000)">
+                <rect id="Rectangle-13-Copy-2" fill-opacity="0" fill="#7D7D7D" x="0" y="0" width="20" height="20"></rect>
+                <path d="M10.5,8 L12.25,8 L12.03125,9.75 L10.5,9.75 L10.5,15 L8.23046875,15 L8.23046875,9.75 L7,9.75 L7,8 L8.23046875,8 L8.23046875,6.82421875 C8.23046875,6.05858992 8.42187309,5.47981967 8.8046875,5.08789062 C9.18750191,4.69596158 9.82551637,4.5 10.71875,4.5 L12.25,4.5 L12.25,6.25 L11.3203125,6.25 C10.9739566,6.25 10.7506515,6.30468695 10.6503906,6.4140625 C10.5501297,6.52343805 10.5,6.70572789 10.5,6.9609375 L10.5,8 Z" id="ion-social-facebook---Ionicons" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

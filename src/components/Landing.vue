@@ -73,7 +73,7 @@
         <p class="text w-40-ns f6 fw3 ph3 lh-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ullam saepe dolorum optio, voluptatem numquam assumenda sequi corporis esse neque sapiente aperiam veniam non quibusdam quis ad eveniet eum quidem.</p>
       </div>
     </section>
-    <section class="pt6 pb2 ph3 ph6-ns">
+    <section class="pt6 pb4 ph3 ph6-ns">
       <div class="mw-m tc center">
         <div class="dib tl">
           <div class="tracked fw9 mb2 f6">0100</div>
@@ -103,6 +103,11 @@
         </div>
       </div>
     </section>
+     <section class="pt4 pb7 ph3 ph6-ns">
+       <div class="mw7 flex-ns center text fw3 lh-text">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nam ab id alias minima. Veritatis optio obcaecati tenetur veniam? Autem doloremque, repellat tempore vel tempora natus consectetur id a cumque?</p>
+       </div>
+     </section>
   </div>
 </template>
 
