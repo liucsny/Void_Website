@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="sans-serif">
     <app-nav></app-nav>
     <router-view/>
     <app-footer></app-footer>
@@ -18,5 +18,4 @@ export default {
 
 <style>
 @import './css/style.css';
-
 </style>

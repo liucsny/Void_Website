@@ -3,8 +3,8 @@
     <section class="p-v ph3 ph6-ns">
       <div class="mw-m flex-ns center">
         <div class="w-100 w-50-ns dark-gray">
-          <div class="tracked fw9">0000</div>
-          <div class="f1 open-sans fw9 mv3 tracked">VOID</div>
+          <div class="tracked fw7">0000</div>
+          <div class="f1 fw7 mv3 open-sans tracked">VOID</div>
           <div class="fw9 f2 tracked">
             <div class="mv w-fit relative">
               <div>一个可扩展的高性能分布式网络</div>
