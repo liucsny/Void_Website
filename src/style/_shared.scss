@@ -1,0 +1,9 @@
+.clear-fix{
+  &:before,&:after{
+    content: " ";
+    clear: both;
+    display: table;
+  }
+}
+
+.show{ border:orange solid 1px }
