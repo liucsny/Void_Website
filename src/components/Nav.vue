@@ -1,6 +1,7 @@
 <template>
   <!-- <nav class="dt w-100 border-box pa3 ph5-ns"> -->
-  <nav class="nav-bar" :class="{'nav-shadow': (this.$el.offsetHeight > 0)}">
+    <!-- :class="{'nav-shadow': scrollToTop} -->
+  <nav ref='nav' class="nav-bar" :class="{'nav-shadow': hasShadow}">
     <div class="nav-wrapper">
       <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home"></a>
       <!-- <div class="dtc v-mid w-75 tr fw4"> -->
@@ -12,4 +13,25 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data(){
+    return {
+      hasShadow: false
+    }
+  },
+  mounted(){
+    window.addEventListener('scroll', ()=>{
+      if(window.pageYOffset>10){
+        this.hasShadow = true
+      } else {
+        this.hasShadow = false
+      }
+    })
+  },
+  computed:{
+  }
+}
+</script>
 

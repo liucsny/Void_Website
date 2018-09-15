@@ -1,32 +1,6 @@
 <template>
-  <div class="min-width">
-    <section class="p-v ph3 ph6-ns">
-      <div class="mw-m flex-ns flex-reverse justify-center center">
-        <div class="w-100 w-50-ns pv2 ph2 pv4-ns">
-          <img class="w-80-ns w-100" src="../assets/img_1.svg" alt="Landing img">
-        </div>
-        <div class="w-100 w-50-ns dark-gray">
-          <div class="tracked fw7">0000</div>
-          <div class="f1 fw7 mv3 open-sans tracked">VOID</div>
-          <div class="fw9 f2 tracked">
-            <div class="mv w-fit relative">
-              <div>一个可扩展的高性能分布式网络</div>
-              <div id="dot" class="bg-blue"></div>
-            </div>
-          </div>
-          <div class="mt6 f5">
-            <div class="mv3 pointer flex items-center arrow-box dim">
-              <div><a class="link dark-gray" target="_blank" href="https://github.com/voidproject/about-void">技术文档</a></div>
-              <img class="arrow" src="@/assets/icons/arrow.svg" alt="">
-            </div>
-            <div class="mv3 pointer flex items-center arrow-box dim">
-              <div><a class="link dark-gray" target="_blank" href="https://github.com/voidproject/about-void">GitHub</a></div>
-              <img class="arrow" src="@/assets/icons/arrow.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div>
+    <app-landing></app-landing>
     <section class="ph3 ph6-ns bg-light-gray pv5">
       <div class="fw5 tracked f-2 lh-sub-title dark-gray tc mt4">传统区块链正面临着哪些挑战?</div>
       <div class="mw-m flex-ns center dark-gray justify-between">
@@ -150,81 +124,13 @@ Void 的设计也受到了 Dat 项目的影响，Dat 扩充了 git 的应用场�
 </template>
 
 <script>
+import appLanding from './sections/Landing.vue';
+
 export default {
-  name: 'Landing',
+  name: '',
+  components: { appLanding }
 };
 </script>
 
 <style scoped>
-
-.arrow{
-  height: .8rem;
-  padding-top: 3px;
-  padding-left: 6px;
-  transition: padding-left .2s ease-in-out;
-}
-
-.arrow-box:hover .arrow{
-  padding-left: 12px;
-  transition: padding-left .2s ease-in-out;
-}
-
-.f-2{
-  font-size: 1.8rem;
-}
-
-.lh-sub-title{
-  line-height: 44px;
-}
-
-.lh-text{
-  line-height: 1.8;
-}
-
-@media screen and (min-width: 480px){
-  .min-width{
-    min-width: 1024px;
-  }
-
-  .flex-reverse{
-    flex-direction: row-reverse
-  }
-
-  .p-v{
-    padding-top: 20vh;
-    padding-bottom: 12vh;
-  }
-
-  .w-fit{
-    width: 24rem;
-  }
-
-  #dot{
-    width: .65rem;
-    height: .65rem;
-    position: absolute;
-    bottom: .25rem;
-    right: 10.6rem;
-  }
-}
-
-@media screen and (max-width: 480px){
-  .p-v{
-    padding-top: 6vh;
-    padding-bottom: 12vh;
-  }
-
-  .w-fit{
-    width: 23rem;
-  }
-
-  #dot{
-    width: .65rem;
-    height: .65rem;
-    position: absolute;
-    bottom: .25rem;
-    right: 9.6rem;
-  }
-}
-
 </style>
