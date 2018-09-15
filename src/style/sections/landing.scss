@@ -2,63 +2,71 @@
   margin-top: 4rem;
   overflow: hidden;
   color: $dark-gray;
-}
 
-.box-flex{
-  display: flex;
-  min-height: 86vh;
-  @include breakpoint(small){
-    &{
-      flex-direction: column-reverse;
-    }
-  }
-
-  .box-left,.box-right{
-    width: 50%;
-    overflow: hidden;
+  .box-flex{
+    display: flex;
+    min-height: 86vh;
     @include breakpoint(small){
       &{
-        width: 100%;
+        flex-direction: column-reverse;
       }
     }
-  }
 
-  .box-right{
-    text-align: center;
-    margin: auto;
-  }
-
-  .box-left{
-    padding-left: 3rem;
-    align-items: center;
-    @include breakpoint(small){
-      padding-left: 1rem;
-    }
-  }
-
-  .box-right > img{
-    object-fit: contain;
-  }
-
-  .box-left h1{
-    font-size: 3rem;
-    margin-bottom: .8rem;
-    margin-top: .5rem;
-    @include breakpoint(small){
-      &{
-        font-size: 2.5rem;
-        letter-spacing: .1rem;
+    .box-left,.box-right{
+      width: 50%;
+      overflow: hidden;
+      @include breakpoint(small){
+        &{
+          width: 100%;
+        }
       }
     }
-  }
 
-  .box-left h2{
-    font-size: 2rem;
-    margin-top: 0rem;
-    // line-height: 1.6;
-    letter-spacing: .2rem;
-    max-width: 20rem;
-    span{
+    .box-right{
+      text-align: center;
+      margin: auto;
+    }
+
+    .box-left{
+      padding-left: 3rem;
+      align-items: center;
+      @include breakpoint(small){
+        padding-left: 1rem;
+      }
+    }
+
+    .box-right > img{
+      object-fit: contain;
+    }
+
+    .box-left h1{
+      font-size: 3rem;
+      margin-bottom: .8rem;
+      margin-top: .5rem;
+      @include breakpoint(small){
+        &{
+          font-size: 2.5rem;
+          letter-spacing: .1rem;
+        }
+      }
+    }
+
+    .box-left h2{
+      font-size: 2rem;
+      margin-top: 0rem;
+      // line-height: 1.6;
+      letter-spacing: .25rem;
+      max-width: 22rem;
+      @include breakpoint(small){
+        &{
+          font-size: 1.8rem;
+          letter-spacing: .2rem;
+          line-height: 1.4;
+          max-width: 22rem;
+        }
+      }
+
+      span{
       display: inline-block;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: $blue;
@@ -66,48 +74,44 @@
       margin: 0;
       height: 2rem;
       transform: translate(0,.2rem);
-      @include breakpoint(small){
-        &{
+        @include breakpoint(small){
+          &{
           font-size: 2rem;
+          }
         }
       }
     }
-    @include breakpoint(small){
-      &{
-        font-size: 1.5rem;
-        letter-spacing: .1rem;
+
+    .box-left-wrapper{
+      // @extend .show;
+      margin-top: 14vh;
+      @include breakpoint(small){
+        &{
+          margin-top: 0;
+        }
+      }
+    }
+
+    .link-group{
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+    }
+
+    .link{
+      color: $dark-gray;
+      padding: .5rem 0;
+      display: block;
+      @extend .dim;
+      cursor: pointer;
+      .arrow{
+      margin-left: .25rem;
+      }
+
+      &:hover img{
+        transition: transform .1s ease-in-out;
+        transform: translate(.3rem,0)
       }
     }
   }
 
-  .box-left-wrapper{
-    // @extend .show;
-    margin-top: 14vh;
-    @include breakpoint(small){
-      &{
-        margin-top: 0;
-      }
-    }
-  }
-
-  .link-group{
-    margin-top: 4rem;
-    margin-bottom: 6rem;
-  }
-
-  .link{
-    color: $dark-gray;
-    padding: .5rem 0;
-    display: block;
-    @extend .dim;
-    cursor: pointer;
-    .arrow{
-     margin-left: .25rem;
-    }
-
-    &:hover img{
-      transition: transform .1s ease-in-out;
-      transform: translate(.3rem,0)
-    }
-  }
 }

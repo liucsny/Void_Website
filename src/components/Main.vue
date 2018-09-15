@@ -1,44 +1,8 @@
 <template>
   <div>
     <app-landing></app-landing>
-    <section class="ph3 ph6-ns bg-light-gray pv5">
-      <div class="fw5 tracked f-2 lh-sub-title dark-gray tc mt4">传统区块链正面临着哪些挑战?</div>
-      <div class="mw-m flex-ns center dark-gray justify-between">
-        <div class="w-100 tc w-30-ns pv4">
-          <img class="w-60 pt4 pb3" src="../assets/1-1.svg" alt="">
-          <div>
-            <h2 class="fw6 f5 tracked tc">网络吞吐量小</h2>
-            <p class="text tl ph3 f6 fw3 lh-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id eum dolores libero. Fugiat sint exercitationem quis.</p>
-          </div>
-        </div>
-        <div class="w-100 tc w-30-ns pv4">
-          <img class="w-60 pt4 pb3" src="../assets/1-2.svg" alt="">
-          <div>
-            <h2 class="fw6 f5 tracked tc">存储成本高昂</h2>
-            <p class="text tl ph3 f6 fw3 lh-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id eum dolores libero. Fugiat sint exercitationem quis.</p>
-          </div>
-        </div>
-        <div class="w-100 tc w-30-ns pv4">
-          <img class="w-60 pt4 pb3" src="../assets/1-3.svg" alt="">
-          <div>
-            <h2 class="fw6 f5 tracked tc">交易确认时间长</h2>
-            <p class="text tl ph3 f6 fw3 lh-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id eum dolores libero. Fugiat sint exercitationem quis.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pv6 ph3 ph6-ns">
-      <div class="mw-m flex-ns justify-center center">
-        <div class="w-100 w-50-ns dark-gray mt3">
-          <!-- img -->
-        </div>
-        <div class="w-100 w-40-ns dark-gray">
-          <div class="tracked fw9 mb3 f6">0001</div>
-          <div class="fw7 tracked f-2 lh-sub-title">Void<br/>一个高性能  高度可扩展<br/>轻量级的区块链侧链网络</div>
-          <p class="text f6 fw3 lh-text mt4">Void 是一个高性能，高度可扩展的分布式数据流网络，也是一个轻量级的区块链侧链网络。<br/>Void 使用类似区块链的数据结构，每个用户或每个应用都是一条独立的链，即时发布消息，不需要等待矿工确认和负担矿工费。由于每一条链各自独立，不需要像比特币的区块链那样打包交易，所以 Void 以消息为链的基本单元，而不是区块，作为一个可验证数据结构（Authenticated Data Structure）和只增日志结构（append-only log），数据在网络中广播（gossiping），并以一定的规则分布，形成高效的去中心自治网络。</p>
-        </div>
-      </div>
-    </section>
+    <app-intro></app-intro>
+    <app-section-1></app-section-1>
      <section class="pv6 ph3 ph6-ns">
       <div class="mw-m flex-ns justify-center center">
         <div class="w-100 w-40-ns dark-gray">
@@ -125,10 +89,16 @@ Void 的设计也受到了 Dat 项目的影响，Dat 扩充了 git 的应用场�
 
 <script>
 import appLanding from './sections/Landing.vue';
+import appIntro from './sections/Intro.vue';
+import appSection_1 from './sections/Section_1.vue';
 
 export default {
   name: '',
-  components: { appLanding }
+  components: { 
+    appLanding,
+    'app-intro':appIntro,
+    'app-section-1': appSection_1
+  }
 };
 </script>
 

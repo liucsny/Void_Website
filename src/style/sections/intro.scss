@@ -1,0 +1,56 @@
+.intro{
+  background-color: $light-gray;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  .title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .box-flex{
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(small){
+      &{
+        flex-direction: column;
+      }
+    }
+  }
+
+  .box-flex-item{
+    // @extend .show;
+    max-width: 20rem;
+
+    img{
+      object-fit: contain;
+      height: 8rem;
+      display: block;
+      margin: 1rem auto 2rem auto;
+    }
+    @include breakpoint(small){
+      margin: 2rem auto;
+    }
+  }
+
+  .text{
+    h2{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    p{
+      font-size: .875rem;
+      letter-spacing: .05rem;
+      font-weight: 200;
+      line-height: 1.7;
+      text-align: justify;
+      color: $text;
+      padding: 0 1rem;
+    }
+  }
+}
