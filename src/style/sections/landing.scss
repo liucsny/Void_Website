@@ -25,6 +25,12 @@
     .box-right{
       text-align: center;
       margin: auto;
+      img{
+        width: 80%;
+        @include breakpoint(small){
+          width: 86%;
+        }
+      }
     }
 
     .box-left{

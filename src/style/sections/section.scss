@@ -1,0 +1,23 @@
+.section-text-right,.section-text-left{
+  display: flex;
+
+  div{
+    width: 100%;
+  }
+
+  text{
+    
+  }
+}
+
+@include breakpoint(small){
+  .section-text-right{
+    flex-direction: column;
+  }
+}
+
+@include breakpoint(small){
+  .section-text-left{
+    flex-direction: column-reverse;
+  }
+}

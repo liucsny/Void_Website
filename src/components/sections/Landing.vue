@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="box-right">
-        <img class="w-80-ns w-100" src="../../assets/img_1.svg" alt="Landing img">
+        <img src="../../assets/img_1.svg" alt="Landing img">
       </div>
     </div>
   </section>

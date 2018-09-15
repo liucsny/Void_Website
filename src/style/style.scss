@@ -1,10 +1,10 @@
 @import '../../node_modules/tachyons-sass/tachyons.scss';
 
-@import 'shared.scss';
 @import 'variables.scss';
 @import 'media_query.scss';
+@import 'shared.scss';
 
 @import './components/nav.scss';
 @import './sections/landing.scss';
 @import './sections/intro.scss';
-@import './sections/section_1.scss';
+@import './sections/section.scss';

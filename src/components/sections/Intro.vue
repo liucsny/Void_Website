@@ -1,6 +1,6 @@
 <template>
   <section class="intro">
-    <div class="container">
+    <div class="container section">
       <div class="title">传统区块链正面临着哪些挑战?</div>
       <div class="box-flex">
         <div v-for="(item, index) in content" :key="index" class="box-flex-item">
