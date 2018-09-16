@@ -1,0 +1,8 @@
+.summary{
+  .wrapper{
+    @extend .paragraph-text;
+    max-width: 52rem;
+    margin: 0 auto 8rem auto;
+    padding: 0 2rem 2rem 2rem;
+  }
+}

@@ -22,4 +22,13 @@
   font-weight: 600;
   margin: 0;
   letter-spacing: .15rem;
+  color: $dark-gray;
+}
+
+.paragraph-text{
+  color: $text;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: justify;
 }
