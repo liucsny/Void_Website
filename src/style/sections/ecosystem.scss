@@ -26,6 +26,7 @@
 
   .wrapper-cards{
     display: flex;
+    justify-content: center;
     @include breakpoint(small){
       &{
         flex-direction: column;
@@ -37,7 +38,7 @@
     padding: 1.25rem 1.5rem;
     // border: 1px solid $light-gray;
     box-shadow: 0 1px 8px 0 rgba(18, 0, 100, 0.1);
-    width: 25%;
+    width: 30%;
     border-radius: .5rem;
     @include breakpoint(small){
       &{

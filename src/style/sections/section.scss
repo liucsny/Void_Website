@@ -58,3 +58,12 @@
     flex-direction: column-reverse;
   }
 }
+
+
+.sub-title{
+  @extend .ttu;
+  @extend .mb1;
+  @extend .mt4;
+  @extend .tracked;
+  font-size: .875rem;
+}

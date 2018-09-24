@@ -5,4 +5,18 @@
     margin: 0 auto 8rem auto;
     padding: 0 2rem 2rem 2rem;
   }
+
+  .wrapper-title{
+    // max-width: 20rem;
+    // margin: 0 auto 2rem auto;
+  }
+
+  .title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $dark-gray;
+    margin-top: .75rem;
+    letter-spacing: .15rem;
+  }
 }
